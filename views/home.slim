@@ -1,0 +1,57 @@
+doctype html
+html lang='en'
+  head
+    meta charset='utf-8'
+    meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'
+
+    title
+      | RGeo GEOS PROJ Extensions Test
+
+    meta name='description' content='Build libraries on Heroku without pain'
+
+    link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'
+
+  body
+    .container style="max-width: 30rem;"
+      h1.mt-3 RGeo extensions test
+      .card.my-3.mx-auto
+        - if RGeo::Geos.supported?
+          .card-header.text-white.bg-dark RGeo
+          .card-body
+            h5.card-title Version information
+            pre.card-text
+              | rgeo:       #{RGeo::VERSION}
+              br
+              | rgeo-proj4: #{RGeo::Proj4::VERSION}
+
+      .card.my-3.mx-auto
+        - if RGeo::Geos.supported?
+          .card-header.text-white.bg-success &check; GEOS extensions supported
+          .card-body
+            h5.card-title Version information
+            pre.card-text
+              | GEOS: #{RGeo::Geos.version}
+        - else
+          .card-header.text-white.bg-danger &times; GEOS extensions not supported
+
+      .card.my-3.mx-auto
+        - if RGeo::CoordSys::Proj4.supported?
+          .card-header.text-white.bg-success &check; PROJ extensions supported
+          .card-body
+            h5.card-title Version information
+            pre.card-text
+              | PROJ: #{RGeo::CoordSys::Proj4.version}
+        - else
+          .card-header.text-white.bg-danger &times; PROJ extensions not supported
+          .card-body
+            h5.card-title Compatibility information
+            p.card-text
+              | rgeo-proj4 has been tested up to PROJ.4 5.2.0
+              br
+              | Please check
+              a<> href="https://github.com/rgeo/rgeo-proj4/issues/4"
+                | rgeo/rgeo-proj4#4
+              | if you are interested in PROJ 6.x compatibility
+      footer
+        a href="https://github.com/diowa/rgeo-sinatra"
+          | github.com/diowa/rgeo-sinatra

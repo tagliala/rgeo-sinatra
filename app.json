@@ -1,0 +1,26 @@
+{
+  "name": "RGeo Sinatra",
+  "description": "Enables GEOS and PROJ extensions on a Ruby web application",
+  "keywords": [
+    "RGeo",
+    "GEOS",
+    "PROJ",
+    "PROJ4",
+    "Heroku"
+  ],
+  "website": "https://github.com/diowa/rgeo-sinatra",
+  "repository": "https://github.com/diowa/rgeo-sinatra",
+  "success_url": "/",
+  "scripts": {
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/diowa/heroku-buildpack-vendorbinaries"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ],
+  "addons": [
+  ]
+}
