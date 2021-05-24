@@ -43,15 +43,7 @@ html lang='en'
               | PROJ: #{RGeo::CoordSys::Proj4.version}
         - else
           .card-header.text-white.bg-danger &times; PROJ extensions not supported
-          .card-body
-            h5.card-title Compatibility information
-            p.card-text
-              | rgeo-proj4 has been tested up to PROJ.4 5.2.0
-              br
-              | Please check
-              a<> href="https://github.com/rgeo/rgeo-proj4/issues/4"
-                | rgeo/rgeo-proj4#4
-              | if you are interested in PROJ 6.x compatibility
+
       footer
         a href="https://github.com/diowa/rgeo-sinatra"
           | github.com/diowa/rgeo-sinatra
