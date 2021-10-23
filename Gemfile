@@ -16,4 +16,4 @@ gem 'slim', '~> 4.1'
 gem 'webrick', '~> 1.7'
 
 gem 'rgeo', '~> 2.3'
-gem 'rgeo-proj4', '~> 3.0'
+gem 'rgeo-proj4', '~> 3.1'
