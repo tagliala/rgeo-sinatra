@@ -36,3 +36,9 @@ heroku buildpacks:add heroku/ruby
 ```
 git push heroku master
 ```
+
+## Force recompile
+
+You may need to force recompilation of RGeo to take advantange of the new
+version of GEOS. You may use the [heroku repo plugin](https://github.com/heroku/heroku-repo),
+running `heroku repo:purge_cache` and deploying again
