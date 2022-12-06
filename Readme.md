@@ -4,6 +4,7 @@ Show how to enable GEOS and PROJ extensions on a Ruby web application hosted
 on Heroku.
 
 Mostly a showcase for our [heroku-buildpack-vendorbinaries](https://github.com/diowa/heroku-buildpack-vendorbinaries)
+and [Vesuvius](https://github.com/tagliala/vesuvius)
 
 ## Automatic deploy
 
