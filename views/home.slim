@@ -15,14 +15,13 @@ html lang='en'
     .container style="max-width: 30rem;"
       h1.mt-3 RGeo extensions test
       .card.my-3.mx-auto
-        - if RGeo::Geos.supported?
-          .card-header.text-white.bg-dark RGeo
-          .card-body
-            h5.card-title Version information
-            pre.card-text
-              | rgeo:       #{RGeo::VERSION}
-              br
-              | rgeo-proj4: #{RGeo::Proj4::VERSION}
+        .card-header.text-white.bg-dark RGeo
+        .card-body
+          h5.card-title Version information
+          pre.card-text
+            | rgeo:       #{RGeo::VERSION}
+            br
+            | rgeo-proj4: #{RGeo::Proj4::VERSION}
 
       .card.my-3.mx-auto
         - if RGeo::Geos.supported?
