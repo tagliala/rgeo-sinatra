@@ -7,32 +7,32 @@ GEM
     rack-protection (3.0.5)
       rack
     rake (13.0.6)
-    rgeo (2.4.0)
-    rgeo-proj4 (3.1.1)
-      rgeo (~> 2.0)
+    rgeo (3.0.0)
+    rgeo-proj4 (4.0.0)
+      rgeo (~> 3.0.0)
     ruby2_keywords (0.0.5)
     sinatra (3.0.5)
       mustermann (~> 3.0)
       rack (~> 2.2, >= 2.2.4)
       rack-protection (= 3.0.5)
       tilt (~> 2.0)
-    slim (4.1.0)
-      temple (>= 0.7.6, < 0.9)
+    slim (5.0.0)
+      temple (~> 0.10.0)
       tilt (>= 2.0.6, < 2.1)
-    temple (0.8.2)
+    temple (0.10.0)
     tilt (2.0.11)
-    webrick (1.7.0)
+    webrick (1.8.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rake (~> 13.0)
-  rgeo (~> 2.4)
-  rgeo-proj4 (~> 3.1)
+  rgeo (~> 3.0)
+  rgeo-proj4 (~> 4.0)
   sinatra (~> 3.0)
-  slim (~> 4.1)
-  webrick (~> 1.7)
+  slim (~> 5.0)
+  webrick (~> 1.8)
 
 RUBY VERSION
    ruby 3.2.0p0
