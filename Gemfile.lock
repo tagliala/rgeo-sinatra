@@ -16,11 +16,11 @@ GEM
       rack (~> 2.2, >= 2.2.4)
       rack-protection (= 3.0.5)
       tilt (~> 2.0)
-    slim (5.0.0)
+    slim (5.1.0)
       temple (~> 0.10.0)
-      tilt (>= 2.0.6, < 2.1)
+      tilt (>= 2.0.6, < 2.2)
     temple (0.10.0)
-    tilt (2.0.11)
+    tilt (2.1.0)
     webrick (1.8.1)
 
 PLATFORMS
@@ -31,11 +31,11 @@ DEPENDENCIES
   rgeo (~> 3.0)
   rgeo-proj4 (~> 4.0)
   sinatra (~> 3.0)
-  slim (~> 5.0)
+  slim (~> 5.1)
   webrick (~> 1.8)
 
 RUBY VERSION
-   ruby 3.2.0p0
+   ruby 3.2.2p53
 
 BUNDLED WITH
-   2.4.1
+   2.4.10

@@ -7,12 +7,12 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '3.2.0'
+ruby '3.2.2'
 
 gem 'sinatra', '~> 3.0'
 
 gem 'rake', '~> 13.0'
-gem 'slim', '~> 5.0'
+gem 'slim', '~> 5.1'
 gem 'webrick', '~> 1.8'
 
 gem 'rgeo', '~> 3.0'
