@@ -3,18 +3,18 @@ GEM
   specs:
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
-    rack (2.2.6.4)
-    rack-protection (3.0.5)
+    rack (2.2.7)
+    rack-protection (3.0.6)
       rack
     rake (13.0.6)
     rgeo (3.0.0)
     rgeo-proj4 (4.0.0)
       rgeo (~> 3.0.0)
     ruby2_keywords (0.0.5)
-    sinatra (3.0.5)
+    sinatra (3.0.6)
       mustermann (~> 3.0)
       rack (~> 2.2, >= 2.2.4)
-      rack-protection (= 3.0.5)
+      rack-protection (= 3.0.6)
       tilt (~> 2.0)
     slim (5.1.0)
       temple (~> 0.10.0)
@@ -38,4 +38,4 @@ RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.4.10
+   2.4.12
