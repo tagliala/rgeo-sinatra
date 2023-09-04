@@ -9,7 +9,7 @@ end
 
 ruby '3.2.2'
 
-gem 'sinatra', '~> 3.0'
+gem 'sinatra', '~> 3.1'
 
 gem 'rake', '~> 13.0'
 gem 'slim', '~> 5.1'
